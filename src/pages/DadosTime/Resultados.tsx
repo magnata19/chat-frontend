@@ -1,6 +1,5 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import { Link } from "react-router-dom";
-import Menu from "../Menu/Menu";
 
 const Resultados = () => {
   const datas: string[] = [

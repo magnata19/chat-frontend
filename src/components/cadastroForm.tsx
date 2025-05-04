@@ -31,14 +31,12 @@ export function CadastroForm({
   const [email, setEmail] = useState<string>("");
   const [password, setPassword] = useState<string>("");
   const [erro, setErro] = useState("");
-  const [sucesso, setSucesso] = useState<boolean>(false);
   const [modalSucessoAberto, setModalSucessoAberto] = useState<boolean>(false);
   const navigate = useNavigate();
 
   const handleCadastro: React.FormEventHandler = async (e) => {
     e.preventDefault();
     setErro("");
-    setSucesso(false);
 
     if (!name || !email || !password) {
       setErro("Preencha todos os campos");
@@ -63,7 +61,6 @@ export function CadastroForm({
       const data = await response.json();
 
       if (response.ok) {
-        setSucesso(true);
         setName("");
         setEmail("");
         setPassword("");
