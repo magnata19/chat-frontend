@@ -28,7 +28,7 @@ interface TokenPayload {
   name: string;
 }
 
-const socket = io("http://localhost:3000");
+const socket = io("https://chat-furia-47ka.onrender.com");
 
 const Chat: React.FC = () => {
   const [title] = useState("Chat Furia");

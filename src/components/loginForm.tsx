@@ -20,7 +20,7 @@ export function LoginForm({
   className,
   ...props
 }: React.ComponentProps<"div">) {
-  const url = "http://localhost:3000/auth/login";
+  const url = "https://chat-furia-47ka.onrender.com/auth/login";
   const navigate = useNavigate();
 
   const [email, setEmail] = useState<string>("");

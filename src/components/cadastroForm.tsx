@@ -25,7 +25,7 @@ export function CadastroForm({
   className,
   ...props
 }: React.ComponentProps<"div">) {
-  const url = "http://localhost:3000/api/user/register";
+  const url = "https://chat-furia-47ka.onrender.com/api/user/register";
 
   const [name, setName] = useState<string>("");
   const [email, setEmail] = useState<string>("");
